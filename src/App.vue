@@ -1,15 +1,16 @@
 <script setup>
-import {getLogin} from "@/api/login.js";
+
 </script>
 
 <template>
-  <div>
-    123123
-    <a-button type="primary" @click="getLogin">登录</a-button>
+  <div class="main">
+    <router-view />
   </div>
-
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.main{
+  height: 100vh;
+  width: 100%;
+}
 </style>
